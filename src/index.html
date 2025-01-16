@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpack App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menu</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello Webpack!</h1>
+    <div class="dropdown">
+        <button class="dropdown-trigger">Menu</button>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item" data-message="You clicked Item 1">Item 1</li>
+          <li class="dropdown-item" data-message="You clicked Item 2">Item 2</li>
+          <li class="dropdown-item" data-message="You clicked Item 3">Item 3</li>
+        </ul>
+      </div>
+      
+      <!-- Element to show the message -->
+      <div id="message" class="message"></div>      
+  <script src="index.js" type="module"></script>
 </body>
 </html>
